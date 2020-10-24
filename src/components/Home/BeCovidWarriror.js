@@ -1,10 +1,12 @@
 import React from "react";
 import "./css/BeCovidWarrior.css";
+import virus from "./images/covid-virus.png";
 import DoHelp from "./images/DoHelp.jpg";
 
 const BeCovidWarriror = () => {
   return (
     <section class="homeMid">
+      <img class="homeBackVirus" src={virus}></img>
       <h1 class="DoHelp">Be A Covid Warrior</h1>
       <div class="banner-container">
         <img src={DoHelp} style={{ marginRight: "1rem" }}></img>

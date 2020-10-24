@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { addPatient } from "../../actions/data";
 import "./css/GetHelp.css";
+import help from "./help.PNG";
 import $ from "jquery";
 
 const GetHelp = ({ addPatient }) => {
@@ -29,6 +30,11 @@ const GetHelp = ({ addPatient }) => {
 
   return (
     <div className="get-help-container">
+      <img className="help" src={help} alt="" />
+      <div className="bannertext">
+        <h1>Need Help</h1>{" "}
+        <h2>Enter your details and directly get Help from the Community</h2>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className={`col-md-7`}>
           <div class="rotate-container" style={{ marginTop: "20px" }}>
@@ -148,7 +154,7 @@ const GetHelp = ({ addPatient }) => {
                   ></textarea>
                 </p>
                 <h4>Contact</h4>
-                <ul class="social-links list-unstyled d-flex justify-content-center">
+                <ul class="contact-details social-links list-unstyled d-flex justify-content-center">
                   <li>
                     <input
                       placeholder="WhatsApp Number"

@@ -21,9 +21,6 @@ const BlogHome = ({ getNewsData, newsArticles, newsLoaded }) => {
 
   return (
     <div className="content-wrapper">
-      <nav className="nav__top">
-        <a rel="nofollow" href="#" className="nav__top__link"></a>
-      </nav>
       <div className="title">
         <h1 style={{ fontFamily: "Dosis" }} className="title__h1">
           {" "}
